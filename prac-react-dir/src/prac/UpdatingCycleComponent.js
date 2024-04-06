@@ -48,9 +48,12 @@ export default MyFunctionalComponent;
     export default MyComponent;
     
     `
-
+    const backgroundColor = {
+      color: 'black',
+      backgroundColor: 'lightgray',
+    }
   return (
-    <div>
+    <div style={backgroundColor}>
       <h1>Update</h1>
       <p>for functional component we use useEffect().</p>
       <code>

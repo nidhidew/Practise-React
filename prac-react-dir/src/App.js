@@ -31,6 +31,9 @@ import UseRefHook from './prac/UseRefHook';
 import UseLayoutEffectHook from './prac/UseLayoutEffectHook';
 import ParentUseImperativeHandleHook from './prac/UseImperativeHandleHook';
 import UseDebugValueHook from './prac/UseDebugValueHook';
+import Projects from './projects/Projects';
+import TodoList from './projects/todo-list/TodoList';
+
 
 function App() {
   return (
@@ -68,6 +71,8 @@ function App() {
           <Route path="/useLayoutEffectHook" element={<UseLayoutEffectHook />} />
           <Route path="/useImperativeHandleHook" element={<ParentUseImperativeHandleHook />} />
           <Route path="/useDebugValueHook" element={<UseDebugValueHook />} />
+          <Route path="/project" element={<Projects />} />
+          <Route path="/todoList" element={<TodoList />} />
         </Routes>
        </Router>
   );

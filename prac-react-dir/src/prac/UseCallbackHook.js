@@ -35,8 +35,12 @@ const UseCallbackHook = () => {
     
     export default UseCallbackHook
     `
+    const backgroundColor = {
+      color: 'black',
+      backgroundColor: 'lightgray',
+    }
   return (
-    <div>
+    <div style={backgroundColor}>
         <h1>UseCallBack Hook</h1>
         <p>The useCallback Hook in React allows you to memoize a function within a component. Memoization, in this context, refers to caching the function's definition so that it's not recreated unnecessarily on every render. This can improve the performance of your React application by preventing unnecessary re-renders of child components that rely on the memoized function.</p>
         <code>{script}</code>

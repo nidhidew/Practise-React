@@ -68,8 +68,12 @@ const Apifetch = () => {
     
     export default Apifetch
     `
+    const backgroundColor = {
+        color: 'white',
+        backgroundColor: 'lightgray',
+      }
   return (
-    <div>
+    <div style={backgroundColor}>
        <h1>Api request using fetch</h1> 
        <code>{script}</code>
        <h3>Output:- </h3>

@@ -49,10 +49,13 @@ const AppContext = () => {
 
 export default AppContext
 `
-
+const backgroundColor = {
+  color: 'black',
+  backgroundColor: 'lightgray',
+}
 const AppContext = () => {
     return(
-        <MyProvider>
+        <MyProvider style={backgroundColor}>
             <UseContext />
         </MyProvider>
     )

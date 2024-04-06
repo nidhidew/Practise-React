@@ -50,9 +50,12 @@ const UseEffectHook = () => {
     
     export default UseEffectHook
     `
-
+    const backgroundColor = {
+      color: 'black',
+      backgroundColor: 'lightgray',
+    }
   return (
-    <div>
+    <div style={backgroundColor}>
         <h1>UseEffect Hook</h1>
         <code>{script}</code>
         <h3>Output:- </h3>

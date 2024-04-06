@@ -24,8 +24,12 @@ const RenderingLists = () => {
     </div>
   );
     `
+    const backgroundColor = {
+      color: 'black',
+      backgroundColor: 'lightgray',
+    }
   return (
-    <div>
+    <div style={backgroundColor}>
     <ul>
       {items.map(item => (
         <li key={item.id}>{item.name}</li>

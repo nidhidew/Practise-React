@@ -50,9 +50,12 @@ const ParentUseImperativeHandleHook = () => {
     
     export default ParentUseImperativeHandleHook
     `
-
+    const backgroundColor = {
+        color: 'black',
+        backgroundColor: 'lightgray',
+      }
     return (
-        <div>
+        <div style={backgroundColor}>
             <h1>UseImperativeHandle hook</h1>
             <p>The useImperativeHandle hook in React allows you to create a ref object that exposes a public API from a functional component to its parent component. This enables a more imperative style of interaction between parent and child components in specific scenarios.</p>
             <code>{script}</code>

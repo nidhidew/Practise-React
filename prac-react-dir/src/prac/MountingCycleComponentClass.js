@@ -38,8 +38,12 @@ const MountingCycleComponentClass = () => {
     export default MyFunctionalComponent;
     
     `;
+    const backgroundColor = {
+      color: 'black',
+      backgroundColor: 'lightgray',
+    }
   return (
-    <div>
+    <div style={backgroundColor}>
       <h1>Mount</h1>
       <p> the code inside componentDidMount() (in the class component) and useEffect() (in the functional component) will run after the component has been rendered to the DOM for the first time.</p>
       <p>for class component componentDidMount() and for functional component useEffect().</p>

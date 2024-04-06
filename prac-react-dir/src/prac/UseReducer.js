@@ -59,9 +59,12 @@ const UseReducer = () => {
     
     export default UseReducer
     `
-
+    const backgroundColor = {
+        color: 'black',
+        backgroundColor: 'lightgray',
+      }
   return (
-    <div>
+    <div style={backgroundColor}>
         <h1>UseReducer Hook</h1>
         <code>{script}</code>
         <h3>Output:- </h3>

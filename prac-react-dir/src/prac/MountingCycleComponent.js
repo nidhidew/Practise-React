@@ -33,9 +33,12 @@ const MountingCycleComponent = () => {
     }
     
     export default CycleComponent`;
-    
+    const backgroundColor = {
+      color: 'black',
+      backgroundColor: 'lightgray',
+    }
   return (
-    <div>
+    <div style={backgroundColor}>
       <h1>Mounting</h1>
       <p>using functional component and useEffect.</p>
       <p>render method used in class component for returning the ui of page and constructor.</p>

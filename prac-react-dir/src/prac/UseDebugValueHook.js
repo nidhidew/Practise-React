@@ -17,8 +17,12 @@ const UseDebugValueHook = () => {
     
     export default UseDebugValueHook
     `
+    const backgroundColor = {
+      color: 'black',
+      backgroundColor: 'lightgray',
+    }
   return (
-    <div> 
+    <div style={backgroundColor}> 
       <h1>UseDebugValue hook</h1>
       <p>The useDebugValue hook is designed to be used within custom hooks, not directly in functional components. It allows you to add a custom label to your custom hook in React DevTools for better debugging.</p>
       <code>{script}</code>

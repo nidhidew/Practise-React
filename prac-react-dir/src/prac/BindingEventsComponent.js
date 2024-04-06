@@ -69,8 +69,12 @@ export default MyFunctionalComponent;
 
 In the class component example, we bind the handleClick event handler in the constructor to ensure that this refers to the component instance when the handler is called. In the functional component example, we use useCallback to memoize the event handler and recreate it only when the count state changes, ensuring that the event handler always has the correct reference to count.
     `
+    const backgroundColor = {
+      color: 'black',
+      backgroundColor: 'lightgray',
+    }
   return (
-    <div>
+    <div style={backgroundColor}>
       <p>Count: {count}</p>
       <button onClick={handleClick}>Increment</button>
       <h2>Binding Events:</h2>

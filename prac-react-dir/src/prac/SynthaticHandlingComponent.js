@@ -6,9 +6,12 @@ const SynthaticHandlingComponent = () => {
     const handleChange = (event) => {
         setInputValue(event.target.value);
     }
-
+    const backgroundColor = {
+      color: 'black',
+      backgroundColor: 'lightgray',
+    }
   return (
-    <div>
+    <div style={backgroundColor}>
       <input type="text" value={inputValue} onChange={handleChange} />
       <p>Input value: {inputValue}</p>
     </div>

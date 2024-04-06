@@ -15,8 +15,12 @@ const TestFunctional = () => {
 export default TestFunctional
 
   `
+  const backgroundColor = {
+    color: 'black',
+    backgroundColor: 'lightgray',
+  }
   return (
-    <div>
+    <div style={backgroundColor}>
       <h1>Functional Components</h1>
       <p>using arrow function creating a component</p>
       <code>

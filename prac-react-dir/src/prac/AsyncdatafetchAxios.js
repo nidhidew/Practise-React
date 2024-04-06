@@ -66,9 +66,12 @@ const AsyncdatafetchAxios = () => {
 
 export default AsyncdatafetchAxios
   `
-
+  const backgroundColor = {
+    color: 'black',
+    backgroundColor: 'lightgray',
+  }
   return (
-    <div>
+    <div style={backgroundColor}>
       <h1>Asynchronous API request (axios)</h1>
       <code>{script}</code>
       <h3>Output:- </h3>

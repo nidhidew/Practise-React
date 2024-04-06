@@ -28,9 +28,12 @@ const UseRefHook = () => {
     
     export default UseRefHook
     `
-
+    const backgroundColor = {
+      color: 'black',
+      backgroundColor: 'lightgray',
+    }
   return (
-    <div>
+    <div style={backgroundColor}>
       <h1>UseRef hook</h1>
       <p>The useRef Hook in React allows you to create a mutable reference object that persists throughout the component's lifecycle. Unlike state variables managed with useState, the value stored in a useRef object doesn't trigger a re-render when updated.</p>
       <code>{script}</code>

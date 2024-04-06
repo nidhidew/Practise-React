@@ -42,8 +42,12 @@ const UseLayoutEffectHook = () => {
     
     export default UseLayoutEffectHook
     `
+    const backgroundColor = {
+      color: 'black',
+      backgroundColor: 'lightgray',
+    }
   return (
-    <div>
+    <div style={backgroundColor}>
       <h1>UseLayoutEffect hook</h1>
       <p>The useLayoutEffect hook in React allows you to perform side effects in functional components that are similar to the componentDidMount and componentDidUpdate lifecycle methods in class components. However, there's a crucial difference: useLayoutEffect runs synchronously after DOM mutations are complete, before the browser has a chance to repaint the screen.</p>
       <code>{script}</code>

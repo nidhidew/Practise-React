@@ -24,13 +24,18 @@ const Uncontrolledcomp = () => {
     
     export default Uncontrolledcomp
     `
-
+    const backgroundColor = {
+      color: 'black',
+      backgroundColor: 'lightgray',
+    }
   return (
     <>
+    <div style={backgroundColor}>
         <input type="text" ref={inputRef}/>
         <button onClick={handleSubmit}>Submit</button>
         <h1>Uncontrolled Component</h1>
         <code>{script}</code>
+      </div>  
     </>
   )
 }

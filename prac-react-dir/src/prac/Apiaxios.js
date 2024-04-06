@@ -62,8 +62,12 @@ const Apiaxios = () => {
     
     export default Apiaxios
     `
+    const backgroundColor = {
+      color: 'white',
+      backgroundColor: 'lightgray',
+    }
   return (
-    <div>
+    <div style={backgroundColor}>
       <h1>Api request using axios</h1>
       <p>install axios using `npm install axios` command in terminal</p>
       <code>{script}</code>

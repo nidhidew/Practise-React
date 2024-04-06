@@ -170,8 +170,12 @@ const Formvalidation = () => {
     
     export default MyComponent;
     `
+    const backgroundColor = {
+      color: 'black',
+      backgroundColor: 'lightgray',
+    }
   return (
-    <div>
+    <div style={backgroundColor}>
       <form>
         <input type="text"
          name="username"

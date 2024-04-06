@@ -55,8 +55,12 @@ class MyComponent extends Component {
 export default MyComponent;
 
     `
+    const backgroundColor = {
+      color: 'black',
+      backgroundColor: 'lightgray',
+    }
   return (
-    <div>
+    <div style={backgroundColor}>
       <p>Count: {count}</p>
       <button onClick={handleClick}>Increment</button>
 

@@ -93,9 +93,12 @@ const FormHandling = () => {
     
     `
 
-
+    const backgroundColor = {
+      color: 'black',
+      backgroundColor: 'lightgray',
+    }
   return (
-    <div>
+    <div style={backgroundColor}>
         <form>
             <input type="text" name="username" value={formData.username} onChange={handleChange} placeholder="username"/>
             <input type="password" name="password" value={formData.password} onChange={handleChange} placeholder="password"/>

@@ -47,8 +47,12 @@ const IfElse = ({ isLoggedIn }) => {
     
     In both examples, the component will render different content based on the value of the isLoggedIn prop or state.
     `
+    const backgroundColor = {
+      color: 'black',
+      backgroundColor: 'lightgray',
+    }
   return (
-    <div>
+    <div style={backgroundColor}>
       {
         isLoggedIn ? (
             <p>Welcome, User!</p>

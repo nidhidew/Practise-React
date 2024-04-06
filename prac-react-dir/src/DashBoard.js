@@ -2,8 +2,13 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const DashBoard = () => {
+
+  const backgroundColor = {
+    color: 'white',
+    backgroundColor: 'lightgray',
+  }
   return (
-    <div>
+    <div style={backgroundColor}>
         <h3><Link to="/funcComp">Functional Component</Link></h3>
         <h3><Link to="/classComp">Class Component</Link></h3>
         <h3><Link to="/propComp">Props </Link></h3>
@@ -35,7 +40,7 @@ const DashBoard = () => {
         <h3><Link to="/useLayoutEffectHook">UseLayoutEffect Hook</Link></h3>
         <h3><Link to="/useImperativeHandleHook">UseImperativeHandle Hook</Link></h3>
         <h3><Link to="/useDebugValueHook">UseDebugValue Hook</Link></h3>
-
+        <h1><Link to="/project">Projects</Link></h1>
     </div>
   )
 }

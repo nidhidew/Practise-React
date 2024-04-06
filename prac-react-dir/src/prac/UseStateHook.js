@@ -35,9 +35,12 @@ const UseStateHook = () => {
     
     export default UseStateHook
     `
-
+    const backgroundColor = {
+      color: 'black',
+      backgroundColor: 'lightgray',
+    }
   return (
-    <div>
+    <div style={backgroundColor}>
       <h1>UseState Hook</h1>
       <code>{script}</code>
       <h3>Output:-</h3>

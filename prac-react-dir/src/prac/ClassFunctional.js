@@ -15,8 +15,12 @@ const ClassFunctional = () => {
 export default ClassFunctional
 
   `
+  const backgroundColor = {
+    color: 'black',
+    backgroundColor: 'lightgray',
+  }
   return (
-    <div>
+    <div style={backgroundColor}>
       <h1>Class Component</h1>
       <code>{script}</code>
     </div>

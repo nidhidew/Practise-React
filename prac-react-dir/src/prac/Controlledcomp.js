@@ -23,8 +23,12 @@ const Controlledcomp = () => {
     
     export default Controlledcomp
     `
+    const backgroundColor = {
+      color: 'black',
+      backgroundColor: 'lightgray',
+    }
   return (
-    <div>
+    <div style={backgroundColor}>
       <input type="text" value={value} onChange={handleChange}/>
       <h1>Controlled component</h1>
       <code>{script}</code>
